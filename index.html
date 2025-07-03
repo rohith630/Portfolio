@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #444;
+      color: white;
+      padding-top: 70px; /* to offset fixed navbar */
+    }
+
+    nav.nav_bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 999;
+    }
+
+    .nav_bar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: gold;
+    }
+
+    .nav_bar ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav_bar ul a {
+      text-decoration: none;
+      color: goldenrod;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .nav_bar ul a:hover {
+      color: aqua;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .homepage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .left-section {
+      width: 50%;
+    }
+
+    .left-section h1 {
+      font-size: 36px;
+      color: gold;
+    }
+
+    .left-section p {
+      font-size: 18px;
+      margin: 20px 0;
+      color: aquamarine;
+    }
+
+    .left-section button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: teal;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .left-section button:hover {
+      background-color: #007b7f;
+    }
+
+    .right-section {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .right-section img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #00adb5;
+    }
+
+    #contact {
+      padding: 100px 30px;
+      background-color: #333;
+      text-align: center;
+    }
+
+    #contact h2 {
+      color: gold;
+      font-size: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav_bar">
+    <div class="logo">MyPortfolio</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">My Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="homepage" id="home">
+    <div class="left-section">
+      <h1>Hello, I'm Rohith</h1>
+      <p>I am a 2nd-year student in Mechanical Engineering, currently learning Web Development. Use the navigation bar to explore more about me.</p>
+      <a href="contact.html"><button>Contact Me</button></a>
+    </div>
+    <div class="right-section">
+      <img src="my_photo.jpg" alt="My Photo" />
+    </div>
+  </section>
+
+  
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: rohithpalisetty2006@gmail.com</p>
+    <p>phone: 8328672542</p>
+  </section>
+
+</body>
+</html>

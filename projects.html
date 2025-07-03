@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: grey;
+      color: #333;
+      padding-top: 70px; /* offset for fixed navbar */
+    }
+
+    nav.nav_bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 1000;
+    }
+
+    .nav_bar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: gold;
+    }
+
+    .nav_bar ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav_bar ul li a {
+      text-decoration: none;
+      transition: color 0.3s;
+      color: goldenrod;
+      font-size: 18px;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+
+    .nav_bar ul li a:hover {
+      color: aqua;
+      background-color: black;
+    }
+
+    section#projects {
+      padding: 4rem 2rem;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: aliceblue;
+    }
+
+    #projects p.subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      color: #00adb5;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      flex: 0 1 calc(33.333% - 1.5rem);
+      background-color: goldenrod;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card:hover h3 {
+      color: #00adb5;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    .visit-btn {
+      padding: 0.6rem 1.2rem;
+      background-color: #00adb5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .visit-btn:hover {
+      background-color: #007f85;
+    }
+
+    @media (max-width: 1000px) {
+      .project-card {
+        flex: 0 1 calc(48% - 1rem);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .project-card {
+        flex: 0 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav_bar">
+    <div class="logo"></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">My Projects</a></li>
+      <li><a href="skills.html">Skills & Achievements</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <p class="subtitle">Some cool stuff I’ve built using HTML, CSS, and JavaScript</p>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>Project One</h3>
+        <button class="visit-btn" onclick="location.href='#'">Visit →</button>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <button class="visit-btn" onclick="location.href='#'">Visit →</button>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <button class="visit-btn" onclick="location.href='#'">Visit →</button>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Four</h3>
+        <button class="visit-btn" onclick="location.href='#'">Visit →</button>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Five</h3>
+        <button class="visit-btn" onclick="location.href='#'">Visit →</button>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Six</h3>
+        <button class="visit-btn" onclick="location.href='#'">Visit →</button>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
